@@ -10,16 +10,16 @@
 | Tickets       | GET           | `/visitors/{visitor_id}/tickets/{ticket_num}`                            | validate visitor's ticket                  |
 | Tickets       | DELETE        | `/tickets/{ticket_num}`                                                  | Delete ticket (void ticket)                |
 |               |               |                                                                          |                                            |
-| Visitors      | GET           | `/zoos/1/visitors/{visitor_id}`                                          | get visitor options                        |
+| Visitors      | GET           | `/zoos/{zoo_id}/visitors/{visitor_id}`                                          | get visitor options                        |
 | Visitors      | POST          | `/visitors`                                                              | Registering(Creating) a visitor            |
 | Visitors      | GET           | `/visitors/{visitor_id}`                                                 | Get visitor info                           |
 | Visitors      | DELETE        | `/visitors/{visitor_id}`                                                 | Delete visitor (Visitor leave the zoo)     |
 |               |               |                                                                          |                                            |
 | Enclosures    | GET           | `/zoos/{zoo_id}/enclosures/{enclosure_id}`                               | get species enclosure                      |
 |               |               |                                                                          |                                            |
-| Animals       | GET           | `/zoos/{zoo_id}/enclosures/animals/{species}/{type}`                     | get all animals from a specific type       |
-| Animals       | GET           | `/zoos/{zoo_id}/enclosures/animals/{species}/{type}/{animal_id}`         | get a specific animal                      |
-| Animals       | PATCH         | `/zoos/{zoo_id}/enclosures/animals/{species}/{type}/{animal_id}`         | update animal's location                   |
+| Animals       | GET           | `/zoos/{zoo_id}/enclosures/{enclosure_id}/animals/{species}/{type}`                     | get all animals from a specific type       |
+| Animals       | GET           | `/zoos/{zoo_id}/enclosures/{enclosure_id}/animals/{species}/{type}/{animal_id}`         | get a specific animal                      |
+| Animals       | PATCH         | `/zoos/{zoo_id}/enclosures/{enclosure_id}/animals/{species}/{type}/{animal_id}`         | update animal's location                   |
 | Animals       | POST          | `/zoos/{zoo_id}/visitors/{visitor_id}/animals/{animal_id}`               | feed a specific animal by a visitor        |
 |               |               |                                                                          |                                            |
 | Shops         | GET           | `/zoos/{zoo_id}/shops/{shop_id}`                                         | get all items in a shop                    |
